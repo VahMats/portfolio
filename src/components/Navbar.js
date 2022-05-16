@@ -74,7 +74,7 @@ const Navbar = () => {
                 </li>
             </ul>
 
-            <div className="flex flex-col fixed top-[35%] left-0">
+            <div className="flex flex-col fixed top-[35%] left-0 hidden md:block">
                 <ul>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] lg:hover:ml-[-10px] lg:duration-300 bg-blue-600">
                         <a className="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/vahe-nersisyan-265040226/">
@@ -92,7 +92,6 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul>
-            <div className="spinner sticky"></div>
             </div>
         </div>
     )

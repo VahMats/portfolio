@@ -3,7 +3,7 @@ import SpaceStation from "../assets/spaceStation.jpg"
 
 const About = () => {
     return (
-                <div name="about" style={{backgroundImage: `url(${SpaceStation})`}} className="w-full h-screen bg-fixed bg-center bg-no-repeat bg-cover px-16 text-gray-300">
+                <div name="about" style={{backgroundImage: `url(${SpaceStation})`}} className="w-full h-screen bg-fixed bg-center bg-no-repeat bg-cover px-4 md:px-16 text-gray-300">
                     <div className="flex flex-col justify-center items-center w-full h-full">
                         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
                             <div className="sm:text-right pb-8 pl-4">

@@ -20,7 +20,7 @@ const Skills = () => {
     })
 
     return (
-        <div name="skills" style={{backgroundImage: `url(${satellite})`}} className="w-full h-screen bg-fixed bg-center bg-no-repeat bg-cover px-20 text-gray-300">
+        <div name="skills" style={{backgroundImage: `url(${satellite})`}} className="w-full min-h-screen md:h-screen bg-fixed bg-center bg-no-repeat bg-cover px-4 md:px-20 text-gray-300">
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <div className="text-gray-800">
                     <p className="text-4xl font-bold inline border-b-4 border-red-900">Experience</p>

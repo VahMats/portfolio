@@ -24,7 +24,7 @@ const Contact = () => {
 
 
     return (
-        <div name="contact" style={{backgroundImage: `url(${SpaceFromEarth})`}} className="w-full h-screen bg-fixed bg-center bg-no-repeat bg-cover flex justify-center items-center p-16">
+        <div name="contact" style={{backgroundImage: `url(${SpaceFromEarth})`}} className="w-full h-screen bg-fixed bg-center bg-no-repeat bg-cover flex justify-center items-center px-8 md:p-16">
             <form onSubmit={e=>{e.preventDefault(); createMessage()}} className="flex flex-col max-w-[600px] w-full">
                 <div className="pb-8">
                     <p className="text-4xl font-bold inline border-b-4 border-red-600 text-gray-300">Contact</p>
