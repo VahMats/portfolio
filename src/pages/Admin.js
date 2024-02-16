@@ -7,19 +7,6 @@ const Admin = () => {
     const [messages, setMessages] = useState([]);
     const messagesCollection = collection(db, "messages");
 
-    useEffect(()=>{
-        const getMessages = async () => {
-            const data = await getDocs(messagesCollection);
-            setMessages(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
-        };
-        getMessages();
-    },[])
-
-    const deleteMessage = async (id) => {
-        const messageDoc = doc(db, "messages", id);
-        await deleteDoc(messageDoc);
-    }
-
     return (
         <div name="contact" style={{backgroundImage: `url(${Mountain})`}} className="w-full h-screen bg-fixed bg-center bg-no-repeat bg-cover grid grid-cols-2 p-16 gap-4">
             <h2 className="col-span-full text-4xl text-gray-100">Messages...</h2>
